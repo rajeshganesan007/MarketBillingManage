@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+</head>
+<body>
+    <div class="split left">
+        <div class="register-form">
+            <h2>Login</h2>
+            <form action="process_login.php" method="post">
+                <div class="input-container">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required autocomplete="email">
+                </div>
+                <div class="input-container">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required autocomplete="current-password">
+                </div>
+                <button type="submit" name="login">Login</button>
+            </form>
+        </div>
+    </div>
+    <div class="split right">
+        <p>Hello, Bro!</p>
+    </div>
+</body>
+</html>

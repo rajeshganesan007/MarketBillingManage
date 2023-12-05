@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product List</title>
+    <link rel="stylesheet" href="client.css" />
+</head>
+<body>
+    <div class="container">
+        <form action="client.php" method="post">
+            <div id="product-list">
+                <div class="product">
+                    <label for="name">Name of product</label>
+                    <input type="text" name="nameofproduct[]" required />
+                    <label for="price">Enter Price</label>
+                    <input type="text" name="price[]" required />
+                    <label for="stack">Number of available</label>
+                    <input type="text" name="stack[]" required />
+                </div>
+            </div>
+            <button type="button" id="add-product">Add Product</button>
+            <button type="submit">Add All Products</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('add-product').addEventListener('click', function () {
+            var productList = document.getElementById('product-list');
+            var productTemplate = document.querySelector('.product');
+            var newProduct = productTemplate.cloneNode(true);
+            productList.appendChild(newProduct);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+/* CSS for the navigation bar */
+.navigation {
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navigation button {
+    text-decoration: none;
+    border: none;
+    background-color: #333;
+    cursor: pointer;
+}
+
+.navigation button a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+.navigation a:hover {
+    background-color: yellow;
+}
+
+/* CSS for the table */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+
+thead {
+    background-color: #333;
+    color: #fff;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #e0e0e0;
+}
